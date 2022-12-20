@@ -1,5 +1,5 @@
 I created this study as a practice exercise for a friend who is just beginning to learn Python programming.
-This worksheet is for those who are new to the python programming language and are just learning programming logic. It generally includes the following topics:
+This exercise is suitable for those who are new to the python programming language and are just learning programming logic. It generally includes the following topics:
 
 • Learning how to import python libraries and how to use pre-defined functions.
 • Working with two-dimensional arrays
