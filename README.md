@@ -1,11 +1,11 @@
 I created this study as a practice exercise for a friend who is just beginning to learn Python programming.
 This exercise is suitable for those who are new to the python programming language and are just learning programming logic. It generally includes the following topics:
 
-⋅⋅* Learning how to import python libraries and how to use pre-defined functions.
-⋅⋅* Working with two-dimensional arrays
-⋅⋅* takes user input and using it to perform actions
-⋅⋅* Loops and conditions
-⋅⋅* Uploading and handling files
+- Learning how to import python libraries and how to use pre-defined functions.
+- Working with two-dimensional arrays
+- takes user input and using it to perform actions
+- Loops and conditions
+- Uploading and handling files
 
 #### Installation of pygame for Windows
 
