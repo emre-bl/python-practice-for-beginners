@@ -7,7 +7,7 @@ This exercise is suitable for those who are new to the python programming langua
 • Loops and conditions
 • Uploading and handling files
 
-Installation of pygame for Windows
+#### Installation of pygame for Windows
 
 ```
 pip install pygame
