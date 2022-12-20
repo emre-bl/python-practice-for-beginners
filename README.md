@@ -6,12 +6,14 @@ This worksheet is for those who are new to the python programming language and a
 • takes user input and using it to perform actions
 • Loops and conditions
 • Uploading and handling files
- 
-![2022-12-21 00-10-49](https://user-images.githubusercontent.com/57074947/208767357-5baa8275-d55c-4976-8f91-0cb1bb822259.gif)
 
 Installation of pygame for Windows
 
 ```
 pip install pygame
 ```
+ 
+![2022-12-21 00-10-49](https://user-images.githubusercontent.com/57074947/208767357-5baa8275-d55c-4976-8f91-0cb1bb822259.gif)
+
+
 
