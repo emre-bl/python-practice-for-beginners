@@ -27,18 +27,21 @@ while(mayin_x == hazine_x and mayin_y == hazine_y):
 
 
 pygame.init()
-screen = pygame.display.set_mode((400,400))
+screen = pygame.display.set_mode((800,800))
 pygame.display.set_caption('Harita Game')
 clock = pygame.time.Clock()
 
 harita_surface = pygame.image.load('harita.png').convert()
 duck = pygame.image.load('duck.png').convert_alpha()
-duck_rect = duck.get_rect(center=(20,20))
+duck_rect = duck.get_rect(center=(40,40))
 
 popup_visible = False
-popup_font = pygame.font.Font('Pixeltype.ttf', 40)
+popup_font = pygame.font.Font('Pixeltype.ttf', 80)
 popup_message = popup_font.render('',False,'Black')
 popup_message_rect = popup_message.get_rect(center=(100,100))
+
+end_surface = pygame.image.load('end.png').convert()
+end_rect = end_surface.get_rect(center=(400,400))
 
 
 is_finished = False
@@ -55,16 +58,16 @@ while(True):
     #get input from user with pygame
     keys = pygame.key.get_pressed()
     if keys[pygame.K_w] and y > 0 and not is_finished:
-        duck_rect.y -= 40
+        duck_rect.y -= 80
         y -= 1
     elif keys[pygame.K_s] and y < 9 and not is_finished:
-        duck_rect.y += 40
+        duck_rect.y += 80
         y += 1
     elif keys[pygame.K_a] and x > 0 and not is_finished:
-        duck_rect.x -= 40
+        duck_rect.x -= 80
         x -= 1
     elif keys[pygame.K_d] and x < 9 and not is_finished:
-        duck_rect.x += 40
+        duck_rect.x += 80
         x += 1
 
     if(x == hazine_x and y == hazine_y):
@@ -94,19 +97,19 @@ while(True):
     
 
     for i in range(len(safe_zones)):
-        pygame.draw.rect(screen,'green',(safe_zones[i][0]*40,safe_zones[i][1]*40,40,40))
+        pygame.draw.rect(screen,'green',(safe_zones[i][0]*80,safe_zones[i][1]*80,80,80))
 
     for i in range(len(danger_zones)):
-        pygame.draw.rect(screen,'red',(danger_zones[i][0]*40,danger_zones[i][1]*40,40,40))
+        pygame.draw.rect(screen,'red',(danger_zones[i][0]*80,danger_zones[i][1]*80,80,80))
 
     for i in range(len(most_dangerous_zone)):
-        pygame.draw.rect(screen,'black',(most_dangerous_zone[i][0]*40,most_dangerous_zone[i][1]*40,40,40))
+        pygame.draw.rect(screen,'black',(most_dangerous_zone[i][0]*80,most_dangerous_zone[i][1]*80,80,80))
 
     screen.blit(duck,duck_rect)
 
     if popup_visible:
-        screen.blit(harita_surface,(0,0))
-        screen.blit(popup_message,(100,300))
+        screen.blit(end_surface,end_rect)
+        screen.blit(popup_message,(200,300))
 
     
    
