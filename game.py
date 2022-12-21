@@ -2,7 +2,7 @@ import random
 import math
 import pygame
 import sys 
-# comment english
+
 harita = []  # map
 for i in range(10):
     harita.append(['O']*10) 
